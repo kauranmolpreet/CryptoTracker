@@ -9,6 +9,7 @@ import { Settings } from "@mui/icons-material";
 import ContactUsScreen from "./screens/ContactUsScreen";
 import Footer from "./components/Footer";
 import ServicesScreen from "./screens/ServicesScreen";
+import OurProcessScreen from "./screens/OurProcessScreen";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route path="/Settings" element={<Settings />} />
           <Route path="/ContactUsScreen" element={<ContactUsScreen />} />
           <Route path="/Services" element={<ServicesScreen />} />
+           <Route path="/OurProcess" element={<OurProcessScreen />} />
         </Routes>
       </div>
       <Footer />

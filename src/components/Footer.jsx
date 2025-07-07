@@ -1,4 +1,7 @@
+import { GitHub, LinkedIn } from "@mui/icons-material";
+
 import InstagramIcon from "@mui/icons-material/Instagram";
+import { Link } from "react-router-dom";
 import React from "react";
 
 const Footer = () => {
@@ -12,41 +15,37 @@ const Footer = () => {
           {/* Navigation Links */}
           <ul className="flex space-x-6 text-sm">
             <li>
-              <a href="#" className="hover:text-gray-400">
+              <Link to={"/"} className="hover:text-gray-400">
                 Home
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#" className="hover:text-gray-400">
-                About
-              </a>
-            </li>
-            <li>
-              <a href="#" className="hover:text-gray-400">
+              <Link to={"Services"} className="hover:text-gray-400">
                 Services
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#" className="hover:text-gray-400">
-                Contact
-              </a>
+              <Link to={"OurProcess"} className="hover:text-gray-400">
+                Our Process
+              </Link>
+            </li>
+            <li>
+              <Link to={"AboutUs"} className="hover:text-gray-400">
+                About
+              </Link>
             </li>
           </ul>
 
           {/* Social Media Icons (use emoji or replace with icons) */}
           <div className="flex space-x-4 text-lg">
-            <a
-              href="#"
-              aria-label="Facebook"
-              className="hover:text-blue-400"
-            ></a>
-            <a
-              href="#"
-              aria-label="Twitter"
-              className="hover:text-blue-300"
-            ></a>
-            <a href="#" aria-label="Instagram" className="hover:text-pink-400">
+            <a href="#" aria-label="Instagram" className="hover:text-green  -400">
               <InstagramIcon />
+            </a>
+            <a href="#" aria-label="Instagram" className="hover:text-green  -400">
+              <GitHub />
+            </a>
+            <a href="#" aria-label="Instagram" className="hover:text-green  -400">
+              <LinkedIn />
             </a>
           </div>
         </div>
